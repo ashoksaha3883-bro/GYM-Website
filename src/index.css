@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+
+@keyframes floatCenter {
+  0%,100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes floatSide {
+  0%,100% { transform: translateY(0px); }
+  50% { transform: translateY(15px); }
+}
+
+.animate-float-center {
+  animation: floatCenter 6s ease-in-out infinite;
+}
+
+.animate-float-side {
+  animation: floatSide 6s ease-in-out infinite;
+}
