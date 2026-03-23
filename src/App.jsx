@@ -26,7 +26,7 @@ const Layout = () => {
 
 function App() {
   return (
-    <BrowserRouter basename="/DashBoard-Project">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
