@@ -66,19 +66,19 @@ const Header = () => {
         <div className="hidden md:flex gap-10 lg:gap-14 font-semibold">
 
           <Link to="/">
-            <button className="hover:scale-110 transition">
+            <button className="hover:scale-110 ">
               Home
             </button>
           </Link>
 
           <Link to="/services">
-            <button className="hover:scale-110 transition">
+            <button className="hover:scale-110 ">
               Services
             </button>
           </Link>
 
           <Link to="/Price">
-            <button className="hover:scale-110 transition">
+            <button className="hover:scale-110 ">
               Pricing
             </button>
           </Link>
@@ -99,7 +99,7 @@ const Header = () => {
           ) : (
             <button
               onClick={handleLogout}
-              className="text-red-500 hover:text-white hover:bg-red-500 px-4 py-2 rounded-lg border border-red-500 transition hover:scale-105"
+              className="text-red-500 hover:text-white hover:bg-red-500 px-4 py-2 rounded-lg border border-red-500  hover:scale-105"
             >
               Logout ({userEmail})
             </button>
@@ -122,7 +122,7 @@ const Header = () => {
       {/* Mobile Menu */}
       {menuOpen && (
 
-        <div className="md:hidden flex flex-col items-center gap-6 pb-6 font-semibold border-t">
+        <div className="md:hidden flex flex-col items-center gap-6 pb-6 font-semibold border-2">
 
           <Link to="/" onClick={() => setMenuOpen(false)}>
             Home

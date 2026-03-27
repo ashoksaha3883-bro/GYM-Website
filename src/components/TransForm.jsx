@@ -5,14 +5,14 @@ const TransForm = () => {
     <section className="bg-gray-50 py-16 px-4 md:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
   
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20 animate-fadeInUp">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-20 ">
           
           <div className="order-2 md:order-1">
-            <h3 className="text-blue-600 font-semibold uppercase tracking-wider mb-2">
+            <h3 className="text-blue-600 font-semibold mb-2">
               Grow your fitness strength
             </h3>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900  mb-4">
               Transform Your Body <br className="hidden sm:block" />
               <span className="text-blue-600">Elevate Your Mind</span>
             </h2>
@@ -27,7 +27,7 @@ const TransForm = () => {
             <img
               src={`${import.meta.env.BASE_URL}image6.jpg`}
               alt="Fitness transformation"
-              className="rounded-3xl shadow-2xl w-full max-w-md object-cover hover:scale-105 transition duration-500"
+              className="rounded-3xl shadow-2xl w-full max-w-md object-cover hover:scale-105  duration-500"
             />
           </div>
 

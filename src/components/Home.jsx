@@ -18,14 +18,14 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 gap-10 lg:gap-14 items-center">
 
-            {/* LEFT CONTENT */}
+          
             <div className="text-center md:text-left">
 
               <p className="inline-block border border-white/30 backdrop-blur-md bg-black/10 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
                 🏋️‍♀️ Stronger Every Day
               </p>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white ">
                 Build Your <br className="hidden sm:block" />
                 <span className="text-yellow-300">Strongest Body</span> <br />
                 Starting Today
@@ -41,7 +41,7 @@ const Home = () => {
               <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
                 <button
                   onClick={scrollToNext}
-                  className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-3 px-8 rounded-lg transition transform hover:scale-105 shadow-lg"
+                  className="bg-white hover:bg-blue-500 text-gray-900 font-semibold py-3 px-8 rounded-lg transition transform hover:scale-105 shadow-lg"
                 >
                   Start Now
                 </button>
@@ -49,7 +49,7 @@ const Home = () => {
 
             </div>
 
-            {/* RIGHT IMAGES */}
+            
             <div className="relative flex flex-col sm:flex-row justify-center items-center gap-6 lg:gap-10">
 
               <div className="w-full sm:w-1/2">
@@ -74,7 +74,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* STATS SECTION */}
+      
 
       <section className="bg-white py-12 shadow-md">
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">

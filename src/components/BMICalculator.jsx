@@ -61,7 +61,7 @@ const BMICalculator = () => {
                   value={height}
                   onChange={(e) => setHeight(e.target.value)}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg  transition"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg "
                   placeholder="e.g. 175"
                 />
               </div>
@@ -86,7 +86,7 @@ const BMICalculator = () => {
                   value={gender}
                   onChange={(e) => setGender(e.target.value)}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg  outline-none transition bg-white"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg  outline-none  bg-white"
                 >
                   <option value="">Select Gender</option>
                   <option value="Male">Male</option>
@@ -95,7 +95,7 @@ const BMICalculator = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition duration-200 transform hover:scale-[1.02]"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg  duration-200 transform hover:scale-[1.02]"
               >
                 Calculate BMI
               </button>

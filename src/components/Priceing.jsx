@@ -74,7 +74,7 @@ const Pricing = () => {
       <div className="text-center mb-8">
         <button
           onClick={handleTopAction}
-          className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="inline-flex items-center px-6 py-3 border border-transparent text-base  rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
         >
           {selectedPlan.name === 'Free Trial'
             ? 'Start Free Trial'
@@ -96,7 +96,7 @@ const Pricing = () => {
               billingPeriod === 'week'
                 ? 'bg-indigo-600 text-white'
                 : 'bg-white text-gray-700 hover:text-gray-900'
-            } relative w-28 rounded-md py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-32 sm:text-base transition-colors`}
+            } relative w-28 rounded-md py-2 text-sm  sm:w-32 sm:text-base transition-colors`}
           >
             Weekly
           </button>
@@ -106,7 +106,7 @@ const Pricing = () => {
               billingPeriod === 'year'
                 ? 'bg-indigo-600 text-white'
                 : 'bg-white text-gray-700 hover:text-gray-900'
-            } relative w-28 rounded-md py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-32 sm:text-base transition-colors`}
+            } relative w-28 rounded-md py-2 text-sm  sm:w-32 sm:text-base transition-colors`}
           >
             Yearly
           </button>
@@ -119,7 +119,7 @@ const Pricing = () => {
           <div
             key={plan.name}
             onClick={() => setSelectedPlanIndex(index)}
-            className={`bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 cursor-pointer ${
+            className={`bg-white rounded-lg shadow-lg overflow-hidden transform  hover:scale-105 cursor-pointer ${
               selectedPlanIndex === index ? 'ring-4 ring-indigo-300' : ''
             }`}
           >
@@ -165,7 +165,7 @@ const Pricing = () => {
                     href={getPaymentLink(plan)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full text-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="block w-full text-center px-4 py-2 border border-transparent  rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 "
                   >
                     Choose {plan.name}
                   </a>
@@ -175,7 +175,7 @@ const Pricing = () => {
                       setSelectedPlanIndex(index);
                       handleTopAction();
                     }}
-                    className="block w-full text-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="block w-full text-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 "
                   >
                     Start Free Trial
                   </button>

@@ -113,7 +113,7 @@ const Feedback = ({ feedbacks = defaultFeedbacks }) => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`h-3 w-3 rounded-full transition ${
+            className={`h-3 w-3 rounded-full  ${
               index === currentIndex
                 ? 'bg-gray-800'
                 : 'bg-gray-300 hover:bg-gray-400'
